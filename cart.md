@@ -4,6 +4,7 @@
 This documentation provides a detailed explanation of the Game.com cartridge/ROM format, covering header structure, security checks and icon preparation.
 
 ## Header
+
 |          | Length  | Description           |
 |----------|---------|-----------------------|
 | **0x00** | 1 byte  | Unknown               |
@@ -55,6 +56,7 @@ Visualised:
 **2 bytes/u16** (big-endian)
 
 The program code entrypoint address.
+
 Relative to start of entry bank in MMU2 (`0x4000`-`0x5FFF`).
 
 Typically `0x4020` if entrypoint directly after header. 
@@ -92,7 +94,9 @@ Can be set to `0x00` for no icon.
 **1 byte/u8** - Image bank
 
 Unlike regular memory banks, image banks are 16KB (256 x 256 x 2 bits).
+
 Image banks must therefore be aligned to 16KB and cannot start on an 8KB memory bank boundary.
+
 For example, image bank `0x21` is memory bank `0x42`.
 
 #### If compressed:
@@ -102,6 +106,7 @@ For example, image bank `0x21` is memory bank `0x42`.
 ### Icon location
 
 The location of the icon data within the bank.
+
 Not read if no icon indicated.
 
 #### If uncompressed:
