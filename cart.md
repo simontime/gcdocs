@@ -47,6 +47,7 @@ Lowest possible entry bank per common ROM size:
 Note: For 2MB ROM chips, only 1.744MB is usable. Insert 256KB of leading padding when preparing a ROM image.
 
 Visualised:
+
 ![Bank diagram](banks.svg)
 
 ### Program entry address
