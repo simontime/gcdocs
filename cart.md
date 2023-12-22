@@ -68,9 +68,13 @@ Typically `0x4020` if entrypoint directly after header.
 Bitwise flags used for cartridge configuration.
 
 **Bit 0**: Cartridge allowed in slot 1
+
 **Bit 1**: Cartridge allowed in slot 2
+
 **Bit 2**: `0` = program cartridge, `1` = data-only cartridge
+
 **Bit 3**: `0` = uncompressed icon, `1` = compressed icon
+
 **Bit 4**: Checked if bit 3 set, but ultimately unused.
 
 Bits 0 and 1 should be set to allow the cartridge to be played in both slots.
