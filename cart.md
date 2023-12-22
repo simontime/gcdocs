@@ -48,7 +48,7 @@ Note: For 2MB ROM chips, only 1.744MB is usable. Insert 256KB of leading padding
 
 Visualised:
 
-![Bank diagram](banks.svg)
+![Banks](banks.svg)
 
 ### Program entry address
 
@@ -107,6 +107,7 @@ Not read if no icon indicated.
 #### If uncompressed:
 
 **1 byte/u8** - Icon X coordinate
+
 **1 byte/u8** - Icon Y coordinate
 
 These are coordinates within the 256 x 256 image bank.
