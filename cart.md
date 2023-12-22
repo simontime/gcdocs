@@ -124,7 +124,7 @@ These are coordinates within the 256 x 256 image bank.
 
 #### If compressed:
 
-**2 bytes/u16** (big endian) - Icon address
+**2 bytes/u16** (big-endian) - Icon address
 
 Relative to start of icon bank in MMU3 (`0x6000`-`0x7FFF`).
 
