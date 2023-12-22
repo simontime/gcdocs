@@ -47,7 +47,7 @@ Lowest possible entry bank per common ROM size:
 Note: For 2MB ROM chips, only 1.744MB is usable. Insert 256KB of leading padding when preparing a ROM image.
 
 Visualised:
-[](banks.svg)
+![Bank diagram](banks.svg)
 
 ### Program entry address
 
@@ -175,7 +175,7 @@ This icon is 64 x 64 pixels in size, and can be either within an image bank or s
 
 When no icon is specified (icon bank `0x00`), a rudimentary square and the program string are drawn:
 
-[](noicon.png)
+![No icon](noicon.png)
 
 ### Compression
 
